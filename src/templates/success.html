@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link href="/static/images/favicon.png" rel="icon">
+  <title>Your JS Life - Team 2 BCM</title>
+  <meta name="description" content="Callum is responsive bootstrap 5 one page personal portfolio html template.">
+  <meta name="author" content="harnishdesign.net">
+
+  <!-- Web Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+    type="text/css">
+
+  <link rel="stylesheet" href="/static/css/success.css">
+  <!-- Stylesheet
+============================== -->
+  <!-- Animate -->
+  <link rel="stylesheet" type="text/css" href="/static/vendor/animate/animate.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="/static/vendor/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" type="text/css" href="/static/vendor/font-awesome/css/all.min.css">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" type="text/css" href="/static/vendor/owl.carousel/assets/owl.carousel.min.css">
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="/static/vendor/magnific-popup/magnific-popup.min.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
+  <!-- Colors Css -->
+  <link id="color-switcher" type="text/css" rel="stylesheet" href="#">
+
+  <link rel="stylesheet" href="/static/css/input-page.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Document Wrapper   
+=============================== -->
+  <div id="main-wrapper">
+
+    <section class="wrapper">
+      <div class="content">
+        <img class="img-fluid" src="../static/images/6.png" alt="">
+        <a href="/"><button type="button" class="btn" style="margin-top: 2.6rem; ">Xong</button></a>
+      </div>
+    </section>
+
+    <!-- Footer
+  ============================================= -->
+    <!-- Footer end -->
+
+  </div>
+  <!-- Document Wrapper end -->
+
+  <!-- Back to Top
+============================================= -->
+  <a id="back-to-top" class="rounded-circle" data-bs-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+      class="fas fa-arrow-up"></i></a>
+
+
+  <!-- JavaScript -->
+  <script src="/static/vendor/jquery/jquery.min.js"></script>
+  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Easing -->
+  <script src="/static/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <!-- Appear -->
+  <script src="/static/vendor/jquery.appear/jquery.appear.min.js"></script>
+  <!-- WOW animation -->
+  <script src="/static/vendor/wow/wow.min.js"></script>
+  <!-- Images Loaded -->
+  <script src="/static/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <!-- Typed -->
+  <script src="/static/vendor/typed/typed.min.js"></script>
+  <!-- Parallax Bg -->
+  <script src="/static/vendor/parallaxie/parallaxie.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="/static/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <!-- isotope Portfolio Filter -->
+  <script src="/static/vendor/isotope/isotope.pkgd.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="/static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Style Switcher -->
+  <script src="/static/js/switcher.min.js"></script>
+  <!-- Custom Script -->
+  <script src="/static/js/theme.js"></script>
+
+  <script src="/static/js/success.js"></script>
+
+  <script>
+    const urlString = window.location.href;
+    let url = new URL(urlString);
+    let id = url.searchParams.get("id");
+    console.log(id);
+    let link = `${urlString.includes("https://") ? "https" : "http"}://${window.location.hostname}/portfolio/${id}`;
+    document.getElementById("link").value = link;
+    document.getElementById("link").parentElement.href = link;
+    // copy to clipboard
+    // document.getElementById("copyBtn").addEventListener("click", function () {
+    //   document.getElementById("link").select();
+    //   // do something here
+
+    // });
+
+  </script>
+
+</body>
+
+</html>

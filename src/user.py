@@ -1,5 +1,6 @@
 from time import time
 import json
+from tokenize import String
 import cloudinary.uploader
 from flask import redirect, template_rendered, url_for, render_template, request, Blueprint, Response, jsonify, abort
 from . import config
@@ -26,6 +27,7 @@ def create_portfolio_data_user():
 
 @user.route("/create-portfolio", methods=["POST"])
 def create_portfolio_file():
+    dataprovider.InteractDatabase.save_data(request.form)
     return render_template("success.html")
 
 # @user.route("/create-portfolio", methods=["POST"])

@@ -27,8 +27,11 @@ def create_portfolio_data_user():
 
 @user.route("/create-portfolio", methods=["POST"])
 def create_portfolio_file():
-    dataprovider.InteractDatabase.save_data(request.form)
-    return render_template("success.html")
+    try:
+        dataprovider.InteractDatabase.save_data(request.form)
+        return render_template("success.html")
+    except:
+        return render_template("404.html")
 
 # @user.route("/create-portfolio", methods=["POST"])
 # def create_portfolio_file():

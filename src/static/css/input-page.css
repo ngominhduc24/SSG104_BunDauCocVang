@@ -91,7 +91,6 @@ input:focus {
   border-width: 2.5px;
 }
 
-
 /*Experience*/
 .borderExperience {
   border: 1.5px solid #fff;
@@ -158,4 +157,49 @@ input:focus {
 
 #footer1 {
   padding: 20px;
+}
+
+.required-field::after {
+  content: " *";
+  color: red;
+}
+
+.gift-choice {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.custom-radio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.present {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.checkout {
+  font-family: sans-serif;
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  margin: 1.5rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li:not(:last-child) {
+  padding-bottom: 0.3rem;
+}
+
+li > span {
+  font-weight: 700;
 }

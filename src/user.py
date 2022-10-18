@@ -20,12 +20,12 @@ def home():
     if request.method == "POST":
         return redirect(url_for('user.create_portfolio_data_user'))
 
-@user.route("/create-portfolio", methods=["GET"])
+@user.route("/home", methods=["GET"])
 def create_portfolio_data_user():
     if request.method == "GET":
         return render_template("input-page.html")
 
-@user.route("/create-portfolio", methods=["POST"])
+@user.route("/home", methods=["POST"])
 def create_portfolio_file():
     try:
         dataprovider.InteractDatabase.save_data(request.form)

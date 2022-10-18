@@ -1,1 +1,1 @@
-web : gunicorn flaskapp:app
+gunicorn -b :5000 --access-logfile - --error-logfile - build:app

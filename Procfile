@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn ullie_diary.wsgi --log-file -
